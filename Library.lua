@@ -1257,7 +1257,9 @@ do
 
                     if Input.UserInputType == Enum.UserInputType.Keyboard then
                         Key = Input.KeyCode.Name;
-                    elseif Input.KeyCode == Enum.KeyCode.Backspace then
+                    end
+
+                    if Input.KeyCode == Enum.KeyCode.Backspace then
                         Key = '';
                     end;
 
