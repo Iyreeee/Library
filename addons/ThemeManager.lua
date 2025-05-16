@@ -9,7 +9,7 @@ return function(Library)
 
 	local fields = { "FontColor", "MainColor", "AccentColor", "BackgroundColor", "OutlineColor" }
 	for _, field in next, fields do
-        Library[field] = decoded[field]
+        Library[field] = Color3.fromHex(decoded[field])
 	end
 
 	Library.AccentColorDark = Library:GetDarkerColor(Library.AccentColor)
